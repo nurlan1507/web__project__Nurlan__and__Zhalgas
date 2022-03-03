@@ -1,0 +1,282 @@
+
+.brand {
+    width: 5%;
+}
+
+body {
+    color: white;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1.0)), url(../images/siteBackground.jpg);
+    background-repeat: repeat;
+    background-size: 80%;
+}
+
+/*welcome*/
+
+.welcome {
+    margin: 5%;
+    border-radius: 50px;
+    padding: 3%;
+    background-color: rgba(69, 148, 62, 0.699);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+p {
+    font-size: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content .btn {
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+    color: green;
+}
+.content :nth-child(4){
+    background-color: transparent;
+    color: white;
+}
+
+.image {
+    width: 40%;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: rgb(255 255 255 / 19%) 1px 0px 14px 3px
+}
+
+
+/*about us*/
+
+.about_us {
+    background-color: rgba(255, 255, 255, 0.466);
+    margin: 5%;
+    border-radius: 50px;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bio {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person img {
+    margin-top: 2%;
+    border-radius: 80px;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.19) 1px 0px 14px 3px
+}
+
+.sites {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sites .accounts img {
+    width: 100%;
+}
+
+.sites .accounts a {
+    width: 10%;
+}
+
+.sites .accounts {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    flex-wrap: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*flags*/
+
+.start_now {
+    background-color: rgba(2, 2, 2, 0.466);
+    display: flex;
+    margin: 5%;
+    border-radius: 50px;
+    flex-wrap: wrap;
+    padding: 3%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.images :nth-child(3){
+    align-self: center;
+}
+
+.display {
+    margin: 5%;
+    height: 100px;
+    width: 200px;
+}
+
+.flag {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: rgb(0, 0, 0) 1px 0px 14px 3px;
+}
+
+/*menuburger*/
+
+.burger {
+    position: relative;
+    display: none;
+}
+
+.burger__list {
+    width: 200px;
+    height: fit-content;
+    display: none;
+    position: fixed;
+    top: 0%;
+    right: -100%;
+    transition: all ease-in-out 1s;
+}
+
+.list__burg {
+    list-style-type: none;
+    background-color: black;
+    padding: 20px 20px;
+    height: 500px;
+    background-image: linear-gradient( rgba(61, 60, 60, 0.8), rgba(0, 0, 0, 1.0));
+    background-repeat: repeat;
+    background-size: 80%;
+}
+
+.list__burg__item {
+    line-height: 24px;
+    padding: 20px 0;
+}
+
+.burg__item__link {
+    color: white;
+    text-decoration: none;
+}
+
+.burger__list.active {
+    display: block;
+    right: 5%;
+    transition: all ease-in-out 1s;
+    height: fit-content;
+}
+
+.form-control {
+    font-size: 20px;
+}
+
+@media(max-width:966px) {
+    #navbar-item {
+        display: none;
+    }
+    #search_mobile {
+        display: block;
+    }
+    .burger {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 46.8px;
+        cursor: pointer;
+        z-index: 50;
+        top: 20px;
+    }
+    .fir.active {
+        transition-property: all;
+        transition-delay: 0.2s;
+        top: 0px;
+        background-color: red;
+        transform: rotate(45deg);
+        transition: background-color 0.3s ease-in 0.3s;
+        transition: transform 0.3s ease-in 0.3s
+    }
+    .thi.active {
+        transition: top 0.3s ease-in 0.2s;
+        top: 0px;
+        background-color: red;
+        transform: rotate(-45deg);
+        transition: background-color 0.3s ease-in 0.3s;
+        transition: transform 0.3s ease-in 0.3s
+    }
+    .line {
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+    }
+    .sec.active {
+        transition: opacity linear .2s;
+        opacity: 0;
+    }
+    .line.active {
+        margin: 0 0 0 0;
+    }
+    .fir {
+        position: absolute;
+        transition-property: all;
+        transition-duration: 0.5s;
+        background-color: black;
+        transform: rotate(0deg);
+        top: -9px;
+    }
+    .sec {
+        position: absolute;
+        transition-property: all;
+        opacity: 1;
+        transition-duration: 0.2s;
+        transition-delay: 0.3s;
+        display: inline-block;
+    }
+    .thi {
+        position: absolute;
+        transition-property: all;
+        transition-duration: 0.5s;
+        background-color: black;
+        transform: rotate(0deg);
+        top: 9px;
+    }
+}
+
+
+/*******************/

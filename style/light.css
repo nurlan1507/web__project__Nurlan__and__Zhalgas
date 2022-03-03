@@ -1,0 +1,139 @@
+.header a {
+    color: black;
+}
+
+.nav-link {
+    color: var(--main-color);
+}
+
+body {
+    color: black;
+    background-image: linear-gradient( rgba(214, 210, 210, 0.8), rgb(189, 184, 184)), url(../images/siteBackground.jpg);
+    background-repeat: repeat;
+    background-size: 80%;
+}
+
+#footer {
+    color: white;
+    background-color: #22272b9d;
+}
+
+.description__txt {
+    color: black;
+    font-weight: 700;
+}
+
+.btn__ {
+    background-image: url(../images/arrowcopy.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.btn__back {
+    background-image: url(../images/arrowcopy.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+.product {
+    display: flex;
+    border: solid 1px #000;
+    height: 505px;
+}
+
+#foodname {
+    color: black;
+    font-weight: 600;
+}
+
+#footer {
+    margin-top: 5%;
+    padding-top: 3%;
+    color: white;
+    background-color: #22272b9d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accounts img {
+    width: 20%;
+}
+
+.accounts {
+    width: 15%;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.actions button {
+    background-color: transparent;
+    color: #000;
+    border: none;
+    font-weight: 600;
+}
+
+hr {
+    margin: 10%;
+}
+
+.footer-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.website {
+    display: flex;
+    align-items: center;
+    font-size: 130%;
+    width: 50%;
+    margin-bottom: 8px;
+}
+
+.website a {
+    display: flex;
+    color: #000;
+}
+
+#footer {
+    color: black;
+    background-color: #585c5f9d;
+}
+
+.list__burg {
+    list-style-type: none;
+    background-color: rgb(138, 133, 133);
+    padding: 20px 20px;
+    height: 500px;
+    background-image: linear-gradient( rgba(61, 60, 60, 0.8), rgba(0, 0, 0, 1.0));
+    background-repeat: repeat;
+    background-size: 80%;
+}
+
+.list__burg__item {
+    line-height: 24px;
+    padding: 20px 0;
+}
+
+.burg__item__link {
+    color: white;
+    text-decoration: none;
+}

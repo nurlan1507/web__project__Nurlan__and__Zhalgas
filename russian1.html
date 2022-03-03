@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/styleBoostrap.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/stylerus.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/b58efeb931.js" crossorigin="anonymous"></script>
+        <ul class="nav sticky-top  w-100 bg-success d-flex justify-content-around justify-content-md-between justify-content-sm-between align-items-center flex-wrap pr-3 pl-3" id="header">
+            <img src="images/chef (1).png" class="brand
+            " alt="">
+            <li class="nav-item" id="navbar-item">
+                <a class="nav-link  font-weight-bold lng-main" href="index.html">Main</a>
+            </li>
+            <li class="nav-item " id="navbar-item">
+                <a class="nav-link font-weight-bold lng-countries" href="kitchen.html">Countries</a>
+            </li>
+            <li class="nav-item " id="navbar-item">
+                <a class="nav-link font-weight-bold lng-contacts" href="#footer">Contacts</a>
+            </li>
+            <li class="nav-item" id="navbar-item">
+                <form class="form-inline w-25">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Type here...">
+                        <button type="submit" class="btn font-weight-bold lng-search">Search</button>
+                    </div>
+                </form>
+            </li>
+            <li class="nav-item" id="navbar-item">
+                <select class="form-select w-100" aria-label="Default select example" style="padding: 5px 50px 5px 10px; border-radius: 8px;font-size:20px">
+                  <option value="ru" style="font-weight:400; font-size:20px">Ru</option>
+                  <option value="en"style="font-weight:400; font-size:20px">En</option>
+              </select>
+
+            </li>
+
+            <div class="burger">
+                <span class="line fir"></span>
+                <span class="line sec"></span>
+                <span class="line thi"></span>
+            </div>
+            <div class="burger__list">
+                <ul class="list__burg">
+                    <li class="list__burg__item"><a class="burg__item__link text-white lng-main" href="main.html">Main</a>
+                    </li>
+                    <li class="list__burg__item"><a class="burg__item__link text-white lng-countries" href="kitchen.html">Countries</a>
+                    </li>
+                    <li class="list__burg__item"><a class="burg__item__link text-white lng-contacts" href="#footer">Contacts</a>
+                    </li>
+                    <li class="nav-item" id="navbar-item search_mobile">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <input type="text" class="form-control w-50" placeholder="Type here...">
+                            </div>
+                            <button type="submit" class="btn font-weight-bold bg-success lng-search">Search</button>
+                        </form>
+                    </li>
+
+                </ul>
+            </div>
+        </ul>
+    </header>
+    <section class="slider__container">
+        <div class="container__">
+            <div class="slider">
+                <div class="slider__line">
+                    <img src="images/bor.jpg">
+                    <img src="images/blin6.jpg">
+                    <img src="images/pelm.jpg">
+                </div>
+            </div>
+            <div class="button__set_">
+                <div class="button_  first__button bg-transparent">
+                    <a class="btn__back arrow arrow_1"></a>
+                </div>
+                <a class="btn__foodname" id="foodname"></a>
+                <div class="button_ second__button bg-transparent">
+                    <a class="btn__ arrow arrow_2"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="shop">
+        <div class="shop__container">
+            <h1 class="container__intro lng-container__intro">Assortiment</h1>
+            <div class="product">
+                <div class="description">
+                    <h1 class="description__intro lng-description__intro__1">Borch</h1>
+                    <div class="description__txt lng-description__txt__1">
+                        Meat for broth - 400-450 Grams (beef, pork, chicken) Potato - 4 Pieces Onion - 1 Piece Carrot - 1 Piece Beetroot - 3 Pieces Cabbage - 1/3-1/2 Pieces Garlic - 2-3 Cloves Tomato paste - 2 Art. tablespoons Vinegar - 1 tbsp. spoon Salt, pepper, vegetable
+                        oil - to taste Water - 3-4 liters </div>
+                    <div class="description__detailed">
+                        <div class="detailed__item detailed__raiting detailed__raiting__1">4.5</div>
+
+                        <img src="images/pngwing.com.png" class="detailed__item zvezda zvezda_1">
+                    </div>
+                </div>
+                <div class="product__image product__image__1">
+                    <img src="images/bor.jpg" class="img_1">
+                </div>
+            </div>
+            <div class="product">
+                <div class="description">
+                    <h1 class="description__intro lng-description__intro__2">Pankaces</h1>
+                    <div class="description__txt lng-description__txt__2">
+                        Heat 3 cups of milk and dissolve the yeast in it. Add 0.5 tablespoon of granulated sugar, salt, egg yolks, melted butter. Mix. Add 300 g flour. Knead the dough. Cover it with a towel. Put in a warm place for fermentation for 2 hours. When the dough rises,
+                        dilute it with the remaining warmed milk. Add the rest of the flour and sugar. Beat the protein and gradually pour it into the dough. Knead the dough again and let it rise. Heat up the pan. Do not stir the dough during baking.
+                        Fry the pancake on both sides until golden brown.</div>
+                    <div class="description__detailed">
+                        <div class="detailed__item detailed__raiting detailed__raiting__2">4.1</div>
+                        <img src="images/pngwing.com.png" class="detailed__item zvezda zvezda_1">
+                    </div>
+                </div>
+                <div class="product__image product__image__2">
+                    <img src="images/blin.jpg" class="img_1">
+                </div>
+            </div>
+            <div class="product">
+                <div class="description">
+                    <h1 class="description__intro lng-description__intro__3">Pelmeni</h1>
+                    <div class="description__txt lng-description__txt__3">
+                        Sifted wheat flour - 500 g + for working with dough Hot water (70-75 degrees) - 250 ml Egg (small) - 1 pc. Salt - 1 teaspoon without a slide Vegetable oil, odorless - 25 ml * For the filling: Meat (beef and pork) - 550 g Onion - 200 g Fat (optional, if
+                        the meat is lean) - 30 g Water - 70-80 g (according to minced meat consistency) Salt - 1 teaspoon without a slide Ground black pepper - to taste * For cooking: Bay leaf - to taste Salt - to taste Black peppercorns - to taste Bulb
+                        onion - 1/4 pcs. * For serving: Butter - to taste</div>
+                    <div class="description__detailed">
+                        <div class="detailed__item detailed__raiting detailed__raiting__1">5.0</div>
+                        <img src="images/pngwing.com.png" class="detailed__item zvezda zvezda_1">
+                    </div>
+                </div>
+                <div class="product__image product__image__3">
+                    <img src="images/pelmeni.jpg" class="img_1">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div id="footer">
+        <div class="footer-body">
+            <div class="company">
+                <div class="website">
+                    <a href="">
+                        <img src="images/chef (1).png" alt=""> CookBook
+                    </a>
+                </div>
+                <div class="unversity">
+                    Astana IT University
+                </div>
+                <div class="group">
+                    SE - 2102
+                </div>
+            </div>
+            <div class="creators">
+                <h4 class="lng-creators">Creators</h4>
+                <div>Malgazhdar Zhalgas</div>
+                <div>Baitassov Nurlan</div>
+            </div>
+            <div class="actions">
+                <div class="contact">
+                    <button class="lng-bcontact">Contact us</button>
+                    <hr>
+                </div>
+                <div class="join">
+                    <button class="lng-bjoin">Join us</button>
+                    <hr>
+                </div>
+            </div>
+            <div class="accounts">
+                <a href=""><img src="images/instagram (1).png" alt=""></a>
+                <a href=""><img src="images/facebook.png" alt=""></a>
+                <a href=""><img src="images/twitter.png" alt=""></a>
+            </div>
+
+        </div>
+        <div class="copyright">
+            &#169 2022 SE - 2102 &#160&#160&#160&#160&#160 Legacy Policy
+        </div>
+    </div>
+
+    <script src="javascript.js">
+    </script>
+    <script src="translaterus.js"></script>
+    <audio id="audio" src="https://www.myinstants.com/instant/ara-ara/?utm_source=copy&utm_medium=share"></audio>
+    <script>
+        const triggers = document.querySelectorAll('.country')
+        triggers.forEach(item => item.addEventListener('click', function() {
+            new Audio('images/engineer_no01.mp3').play();
+        }))
+        const navsound = document.querySelectorAll('.nav-link')
+        navsound.forEach(item => item.addEventListener('click', function() {
+            new Audio('images/minecraft_click.mp3').play();
+        }))
+    </script>
+</body>
+
+</html>

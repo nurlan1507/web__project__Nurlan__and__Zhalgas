@@ -1,0 +1,255 @@
+.countries {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.country {
+    width: 40%;
+    margin: 5% 5%;
+}
+
+.country .card {
+    height: 100%;
+}
+
+.brand {
+    width: 5%;
+}
+
+.btn {
+    background-color: #22272b9d;
+    color: white;
+}
+
+body {
+    color: white;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1.0)), url(../images/siteBackground.jpg);
+    background-repeat: repeat;
+    background-size: 80%;
+}
+
+li a {
+    font-size: 27px;
+}
+
+.btn {
+    font-size: 27px;
+}
+
+form .btn {
+    font-size: 20px;
+}
+
+
+/*menuburger*/
+
+.burger {
+    position: relative;
+    display: none;
+}
+
+.burger__list {
+    width: 200px;
+    height: fit-content;
+    display: none;
+    position: fixed;
+    top: 0%;
+    right: -100%;
+    transition: all ease-in-out 1s;
+}
+
+.list__burg {
+    list-style-type: none;
+    background-color: black;
+    padding: 20px 20px;
+    height: 500px;
+    background-image: linear-gradient( rgba(61, 60, 60, 0.8), rgba(0, 0, 0, 1.0));
+    background-repeat: repeat;
+    background-size: 80%;
+}
+
+.list__burg__item {
+    line-height: 24px;
+    padding: 20px 0;
+}
+
+.burg__item__link {
+    color: white;
+    text-decoration: none;
+}
+
+.burger__list.active {
+    display: block;
+    right: 5%;
+    transition: all ease-in-out 1s;
+    height: fit-content;
+}
+
+.form-control {
+    font-size: 20px;
+}
+
+@media(max-width:966px) {
+    #navbar-item {
+        display: none;
+    }
+    #search_mobile {
+        display: block;
+    }
+    #switchTheme {
+        display: block;
+    }
+    .burger {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 46.8px;
+        cursor: pointer;
+        z-index: 50;
+        top: 20px;
+    }
+    .fir.active {
+        transition-property: all;
+        transition-delay: 0.2s;
+        top: 0px;
+        background-color: red;
+        transform: rotate(45deg);
+        transition: background-color 0.3s ease-in 0.3s;
+        transition: transform 0.3s ease-in 0.3s
+    }
+    .thi.active {
+        transition: top 0.3s ease-in 0.2s;
+        top: 0px;
+        background-color: red;
+        transform: rotate(-45deg);
+        transition: background-color 0.3s ease-in 0.3s;
+        transition: transform 0.3s ease-in 0.3s
+    }
+    .line {
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+    }
+    .sec.active {
+        transition: opacity linear .2s;
+        opacity: 0;
+    }
+    .line.active {
+        margin: 0 0 0 0;
+    }
+    .fir {
+        position: absolute;
+        transition-property: all;
+        transition-duration: 0.5s;
+        background-color: black;
+        transform: rotate(0deg);
+        top: -9px;
+    }
+    .sec {
+        position: absolute;
+        transition-property: all;
+        opacity: 1;
+        transition-duration: 0.2s;
+        transition-delay: 0.3s;
+        display: inline-block;
+    }
+    .thi {
+        position: absolute;
+        transition-property: all;
+        transition-duration: 0.5s;
+        background-color: black;
+        transform: rotate(0deg);
+        top: 9px;
+    }
+}
+
+#footer {
+    margin-top: 5%;
+    padding-top: 3%;
+    color: white;
+    background-color: #22272b9d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accounts img {
+    width: 20%;
+}
+
+.accounts {
+    width: 15%;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.actions button {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+hr {
+    margin: 10%;
+}
+
+.footer-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.website {
+    display: flex;
+    align-items: center;
+    font-size: 130%;
+    width: 50%;
+    margin-bottom: 8px;
+}
+
+.website img {
+    width: 20%;
+}
+
+.website a {
+    display: flex;
+    color: white;
+}
+
+.company {
+    width: 20%;
+}
+
+.copyright {
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.header a {
+    text-transform: uppercase;
+    color: var(--mainText);
+    text-decoration: none;
+}
+
+.nav-link {
+    color: var(--main-color);
+}
+
+#footer {
+    color: white;
+    background-color: #22272b9d;
+}
+
+.changeTheme_2 {
+    display: none;
+}
+
+
+/*******************/
