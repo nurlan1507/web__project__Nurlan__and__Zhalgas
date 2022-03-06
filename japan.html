@@ -268,8 +268,13 @@
             &#169 2022 SE - 2102 &#160&#160&#160&#160&#160 Legacy Policy
         </div>
     </div>
-    <script src="raiting3.js"></script>
+    <script src="ratings/raiting3.js"></script>
     <script>
+        const select = document.querySelector('select');
+        document.getElementById('foodname').innerHTML = 'Тамагояки'
+        if (select.value == "en") {
+            document.getElementById('foodname').innerHTML = 'Tamayagoaki'
+        }
         const triggers = document.querySelectorAll('.country')
         triggers.forEach(item => item.addEventListener('click', function() {
             new Audio('images/engineer_no01.mp3').play();
@@ -301,7 +306,7 @@
         const arr_photo = document.querySelectorAll('.slider .slider__line img')
         let counter = 0;
         let width;
-        document.getElementById('foodname').innerHTML = 'Tamagoyaki'
+
 
         function init() {
             console.log('reseize')
@@ -353,18 +358,32 @@
             let name = document.createElement('a')
             let namecounter = 0;
             name.style.color = "white"
-            if (counter == 0) {
-                name = "Tamagoyaki"
-                food.replaceChildren(name)
-            } else if (counter == 1) {
-                name = "Udon"
-                food.replaceChildren(name)
-            } else if (counter == 2) {
-                name = "Motti"
-                food.replaceChildren(name)
+            if (select.value == 'en') {
+                if (counter == 0) {
+                    name = "Tamagoyaki"
+                    food.replaceChildren(name)
+                } else if (counter == 1) {
+                    name = "Udon"
+                    food.replaceChildren(name)
+                } else if (counter == 2) {
+                    name = "Motti"
+                    food.replaceChildren(name)
+                }
+            }
+            if (select.value == 'ru') {
+                if (counter == 0) {
+                    name = "Тамаягояки"
+                    food.replaceChildren(name)
+                } else if (counter == 1) {
+                    name = "Удон"
+                    food.replaceChildren(name)
+                } else if (counter == 2) {
+                    name = "Моти"
+                    food.replaceChildren(name)
+                }
             }
         }
-        let timer = setInterval(move, 5000)
+        let timer = setInterval(move, 2000)
             /*shop*/
             /*первый*/
         if (window.matchMedia("(max-width: 1700px)").matches) {
@@ -461,7 +480,7 @@
                 "en": "Seacrh",
             }
         }
-        const select = document.querySelector('select');
+
         const allLang = ['en', 'ru'];
 
 

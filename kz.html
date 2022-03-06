@@ -30,17 +30,17 @@
                 border-radius: 50px;
             }
             .product__image__1 {
-                background-image: url("images/jpn1.jpg");
+                background-image: url("images/kz1.jpg");
                 background-position-x: center;
                 background-size: cover;
             }
             .product__image__2 {
-                background-image: url("images/jpn2.jpg");
+                background-image: url("images/kz2.png");
                 background-position-x: center;
                 background-size: cover;
             }
             .product__image__3 {
-                background-image: url("images/jpn3.jpg");
+                background-image: url("images/kz3.jpg");
                 background-position-x: center;
                 background-size: cover;
             }
@@ -267,8 +267,13 @@
             &#169 2022 SE - 2102 &#160&#160&#160&#160&#160 Legacy Policy
         </div>
     </div>
-    <script src="raiting4.js"></script>
+    <script src="ratings/raiting4.js"></script>
     <script>
+        const select = document.querySelector('select');
+        document.getElementById('foodname').innerHTML = 'Плов'
+        if (select.value == "en") {
+            document.getElementById('foodname').innerHTML = 'Plov'
+        }
         const triggers = document.querySelectorAll('.country')
         triggers.forEach(item => item.addEventListener('click', function() {
             new Audio('images/engineer_no01.mp3').play();
@@ -362,8 +367,20 @@
                 name = "Manti"
                 food.replaceChildren(name)
             }
+            if (select.value == 'ru') {
+                if (counter == 0) {
+                    name = "Бешбармак"
+                    food.replaceChildren(name)
+                } else if (counter == 1) {
+                    name = "Куырдак"
+                    food.replaceChildren(name)
+                } else if (counter == 2) {
+                    name = "Манты"
+                    food.replaceChildren(name)
+                }
+            }
         }
-        let timer = setInterval(move, 5000)
+        let timer = setInterval(move, 2000)
             /*shop*/
             /*первый*/
         if (window.matchMedia("(max-width: 1700px)").matches) {
@@ -460,7 +477,7 @@
                 "en": "Seacrh",
             }
         }
-        const select = document.querySelector('select');
+
         const allLang = ['en', 'ru'];
 
 

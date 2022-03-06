@@ -91,6 +91,30 @@ const langArr = {
         'ru': "Наши контакты",
         'en': 'Contact Us',
     },
+    "countrytitle1": {
+        'ru': 'Русская кухня',
+        'en': 'Russian kitchen',
+    },
+    'countrytitle2': {
+        'ru': 'Английская кухня',
+        'en': 'English kitchen',
+    },
+    'countrytitle3': {
+        'ru': 'Японская кухня',
+        'en': 'Japan kitchen',
+    },
+    'countrytitle4': {
+        'ru': 'Казахская кухня',
+        'en': 'Kazakh kitchen',
+    },
+    'countrytitle5': {
+        'ru': 'Узбекская кухня',
+        'en': 'Uzbek kitchen',
+    },
+    'countrytitle6': {
+        'ru': 'Корейская кухня',
+        'en': 'Korean kitchen',
+    },
 }
 const select = document.querySelector('select');
 const allLang = ['en', 'ru'];

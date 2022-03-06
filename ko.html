@@ -12,7 +12,55 @@
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/stylerus.css">
-
+    <style>
+        @media(max-width:892px) {
+            .product {
+                display: flex;
+                flex-direction: column;
+                border: solid 1px #fff;
+                height: fit-content;
+                padding-bottom: 20px;
+                height: 40%;
+            }
+            .product__image {
+                background-size: cover;
+                width: 60%;
+                height: 300px;
+                margin: 0 auto;
+                border-radius: 50px;
+            }
+            .product__image__1 {
+                background-image: url("images/ko1.jpg");
+                background-position-x: center;
+                background-size: cover;
+            }
+            .product__image__2 {
+                background-image: url("images/ko2.jpg");
+                background-position-x: center;
+                background-size: cover;
+            }
+            .product__image__3 {
+                background-image: url("images/ko3.jpg");
+                background-position-x: center;
+                background-size: cover;
+            }
+            .product__image img {
+                display: none;
+            }
+            .description .btn {
+                margin-bottom: 30px;
+            }
+            .img_1 {
+                display: none;
+            }
+            @media(max-width:549px) {
+                .product__image__2 {
+                    background-image: url(../images/blin.jpg);
+                    background-position-x: -30px;
+                }
+            }
+        }
+    </style>
 
 </head>
 
@@ -65,9 +113,9 @@
         <div class="container__">
             <div class="slider">
                 <div class="slider__line">
-                    <img src="images/bor.jpg">
-                    <img src="images/blin6.jpg">
-                    <img src="images/pelm.jpg">
+                    <img src="images/ko1.jpg">
+                    <img src="images/ko2.jpg">
+                    <img src="images/ko3.jpg">
                 </div>
             </div>
             <div class="button__set_">
@@ -86,10 +134,12 @@
             <h1 class="container__intro lng-container__intro">Assortiment</h1>
             <div class="product">
                 <div class="description">
-                    <h1 class="description__intro lng-description__intro__1">Borch</h1>
+                    <h1 class="description__intro lng-description__intro__1">Beshbarmak</h1>
                     <div class="description__txt lng-description__txt__1">
-                        Meat for broth - 400-450 Grams (beef, pork, chicken) Potato - 4 Pieces Onion - 1 Piece Carrot - 1 Piece Beetroot - 3 Pieces Cabbage - 1/3-1/2 Pieces Garlic - 2-3 Cloves Tomato paste - 2 Art. tablespoons Vinegar - 1 tbsp. spoon Salt, pepper, vegetable
-                        oil - to taste Water - 3-4 liters </div>
+                        This simplified recipe for a traditional Korean snack is perfect for beginners. Koreans put hot kochukaru peppers in kimchi with a pronounced taste. But if you didn’t find it, replace it with ordinary red ground. 1 kg of Beijing cabbage (medium-sized
+                        head); ¼ cup salt; 1 tablespoon of grated garlic; 1 teaspoon grated ginger; 1 teaspoon of sugar; 2 tablespoons fish sauce or 3 tablespoons water 1-5 tablespoons of kochukaru or ground red hot pepper; 200 g daikon or carrots; green
+                        onion.
+                    </div>
                     <div class="description__detailed">
                         <div class="detailed__item">
                             <div class="detailed__item detailed__raiting detailed__raiting__1" id="total1"></div>
@@ -111,16 +161,16 @@
 
                 </div>
                 <div class="product__image product__image__1">
-                    <img src="images/bor.jpg" class="img_1">
+                    <img src="images/ko1.jpg" class="img_1">
                 </div>
             </div>
             <div class="product">
                 <div class="description">
-                    <h1 class="description__intro lng-description__intro__2">Pankaces</h1>
+                    <h1 class="description__intro lng-description__intro__2">Kimbap</h1>
                     <div class="description__txt lng-description__txt__2">
-                        Heat 3 cups of milk and dissolve the yeast in it. Add 0.5 tablespoon of granulated sugar, salt, egg yolks, melted butter. Mix. Add 300 g flour. Knead the dough. Cover it with a towel. Put in a warm place for fermentation for 2 hours. When the dough rises,
-                        dilute it with the remaining warmed milk. Add the rest of the flour and sugar. Beat the protein and gradually pour it into the dough. Knead the dough again and let it rise. Heat up the pan. Do not stir the dough during baking.
-                        Fry the pancake on both sides until golden brown.</div>
+                        Below is a classic kimbap recipe, but in principle it can be made with any filling. If your fridge is missing something, skip or substitute an ingredient. Instead of fried meat, add ham, sausages or crab sticks. Pickled daikon can be replaced with pickled
+                        cucumber or kimchi, carrots with bell pepper. Ingredients: 200 g round grain rice; 100 g boiled or fried beef; 70 g pickled daikon; 4 nori sheets; 1 carrot; 1 cucumber; 1 egg; Sesame oil; frying oil.
+                    </div>
                     <div class="description__detailed">
                         <div class="detailed__item">
                             <div class="detailed__item detailed__raiting detailed__raiting__2" id="total1"></div>
@@ -141,16 +191,15 @@
                     </div>
                 </div>
                 <div class="product__image product__image__2">
-                    <img src="images/blin.jpg" class="img_1">
+                    <img src="images/ko2.jpg" class="img_1">
                 </div>
             </div>
             <div class="product">
                 <div class="description">
-                    <h1 class="description__intro lng-description__intro__3">Pelmeni</h1>
+                    <h1 class="description__intro lng-description__intro__3">Omuk</h1>
                     <div class="description__txt lng-description__txt__3">
-                        Sifted wheat flour - 500 g + for working with dough Hot water (70-75 degrees) - 250 ml Egg (small) - 1 pc. Salt - 1 teaspoon without a slide Vegetable oil, odorless - 25 ml * For the filling: Meat (beef and pork) - 550 g Onion - 200 g Fat (optional, if
-                        the meat is lean) - 30 g Water - 70-80 g (according to minced meat consistency) Salt - 1 teaspoon without a slide Ground black pepper - to taste * For cooking: Bay leaf - to taste Salt - to taste Black peppercorns - to taste Bulb
-                        onion - 1/4 pcs. * For serving: Butter - to taste</div>
+                        A popular street food sold as long patties or strips on a stick. Ingredients: 200 g white fish fillet; 100 g squid fillet; 100 g of peeled shrimp; 2 cloves of garlic; ½ onion; 1 teaspoon sugar and salt; 2 tablespoons of flour; 2 tablespoons of starch;
+                        1 egg white; 1½ cups sunflower oil for frying</div>
                     <div class="description__detailed">
                         <div class="detailed__item">
                             <div class="detailed__item detailed__raiting detailed__raiting__3"></div>
@@ -171,7 +220,7 @@
                     </div>
                 </div>
                 <div class="product__image product__image__3">
-                    <img src="images/pelmeni.jpg" class="img_1">
+                    <img src="images/ko3.jpg" class="img_1">
                 </div>
             </div>
         </div>
@@ -218,21 +267,10 @@
             &#169 2022 SE - 2102 &#160&#160&#160&#160&#160 Legacy Policy
         </div>
     </div>
-    <script src="ratings/raiting.js"></script>
-    <script src="javascript.js"></script>
-    <script src="translation/translaterus.js">
-    </script>
+
+    <script src="ratings/ko.js"></script>
     <audio id="audio" src="https://www.myinstants.com/instant/ara-ara/?utm_source=copy&utm_medium=share"></audio>
-    <script>
-        const triggers = document.querySelectorAll('.country')
-        triggers.forEach(item => item.addEventListener('click', function() {
-            new Audio('images/engineer_no01.mp3').play();
-        }))
-        const navsound = document.querySelectorAll('.nav-link')
-        navsound.forEach(item => item.addEventListener('click', function() {
-            new Audio('images/minecraft_click.mp3').play();
-        }))
-    </script>
+
 </body>
 
 </html>

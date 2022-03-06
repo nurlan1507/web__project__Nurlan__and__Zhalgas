@@ -18,13 +18,21 @@
             <img src="images/chef (1).png" class="brand
             " alt="">
             <li class="nav-item" id="navbar-item">
-                <a class="nav-link text-white font-weight-bold" href="main.html">Main</a>
+                <a class="nav-link  font-weight-bold lng-main" href="index.html">Main</a>
             </li>
-            <li class="nav-item" id="navbar-item">
-                <a class="nav-link text-white font-weight-bold" href="kitchen.html">Countries</a>
+            <li class="nav-item " id="navbar-item">
+                <a class="nav-link font-weight-bold lng-countries" href="kitchen.html">Countries</a>
             </li>
+            <li class="nav-item " id="navbar-item">
+                <a class="nav-link font-weight-bold lng-contacts" href="#footer">Contacts</a>
+            </li>
+
             <li class="nav-item" id="navbar-item">
-                <a class="nav-link text-white font-weight-bold" href="#footer">Contacts</a>
+                <select class="form-select w-100" aria-label="Default select example" style="padding: 5px 50px 5px 10px; border-radius: 8px;font-size:20px">
+                  <option value="ru" style="font-weight:400; font-size:20px">Ru</option>
+                  <option value="en"style="font-weight:400; font-size:20px">En</option>
+              </select>
+
             </li>
 
             <div class="burger">
@@ -63,7 +71,7 @@
                         <div class="card">
                             <img src="images/russia3.jpg" class="img-country">
                             <div class="card-body">
-                                <h5 class="card-title text-center text-secondary">Russian kitchen</h5>
+                                <h5 class="card-title text-center text-secondary lng-countrytitle1">Russian kitchen</h5>
                             </div>
                         </div>
                     </a>
@@ -71,7 +79,7 @@
                         <div class="card">
                             <img src="images/britain.jpg" class="img-country">
                             <div class="card-body">
-                                <h5 class="card-title text-center text-secondary">English kitchen</h5>
+                                <h5 class="card-title text-center text-secondary lng-countrytitle2">English kitchen</h5>
                             </div>
                         </div>
                     </a>
@@ -79,7 +87,7 @@
                         <div class="card">
                             <img src="images/japan2.jpg" class="img-country">
                             <div class="card-body">
-                                <h5 class="card-title text-center text-secondary">Japanese kitchen</h5>
+                                <h5 class="card-title text-center text-secondary lng-countrytitle3">Japanese kitchen</h5>
                             </div>
                         </div>
                     </a>
@@ -87,23 +95,23 @@
                         <div class="card">
                             <img src="images/kazakhstan.jpg" class="img-country">
                             <div class="card-body">
-                                <h5 class="card-title text-center text-secondary">Kazakh kitchen</h5>
+                                <h5 class="card-title text-center text-secondary lng-countrytitle4">Kazakh kitchen</h5>
                             </div>
                         </div>
                     </a>
-                    <a href="#" class="country">
+                    <a href="uz.html" class="country">
                         <div class="card">
                             <img src="images/uzbekistan.jpg" class="img-country">
                             <div class="card-body">
-                                <h5 class="card-title text-center text-secondary">Uzbek kitchen</h5>
+                                <h5 class="card-title text-center text-secondary lng-countrytitle5">Uzbek kitchen</h5>
                             </div>
                         </div>
                     </a>
-                    <a href="#" class="country">
+                    <a href="ko.html" class="country">
                         <div class="card">
                             <img src="images/korea2.jpg">
                             <div class="card-body">
-                                <h5 class="card-title text-center text-secondary">Korean kitchen</h5>
+                                <h5 class="card-title text-center text-secondary lng-countrytitle6">Korean kitchen</h5>
                             </div>
                         </div>
                     </a>
@@ -115,7 +123,7 @@
             <div class="footer-body">
                 <div class="company">
                     <div class="website">
-                        <a href="main.html">
+                        <a href="">
                             <img src="images/chef (1).png" alt=""> CookBook
                         </a>
                     </div>
@@ -127,20 +135,24 @@
                     </div>
                 </div>
                 <div class="creators">
-                    <h4>Creators</h4>
+                    <h4 class="lng-creators">Creators</h4>
                     <div>Malgazhdar Zhalgas</div>
                     <div>Baitassov Nurlan</div>
                 </div>
                 <div class="actions">
+                    <div class="contact">
+                        <button class="lng-bcontact">Contact us</button>
+                        <hr>
+                    </div>
                     <div class="join">
-                        <button>Join us</button>
+                        <button class="lng-bjoin">Join us</button>
                         <hr>
                     </div>
                 </div>
                 <div class="accounts">
-                    <a href="https://www.instagram.com/m.zhalgas.m" target="_blank"><img src="images/instagram (1).png" alt=""></a>
-                    <a href="https://www.facebook.com/gh.jh.50746" target="_blank"><img src="images/facebook.png" alt=""></a>
-                    <a href="https://twitter.com/m_zhalgas_m" target="_blank"><img src="images/twitter.png" alt=""></a>
+                    <a href=""><img src="images/instagram (1).png" alt=""></a>
+                    <a href=""><img src="images/facebook.png" alt=""></a>
+                    <a href=""><img src="images/twitter.png" alt=""></a>
                 </div>
 
             </div>
@@ -153,9 +165,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b58efeb931.js" crossorigin="anonymous"></script>
-    <script src="javascript.js">
-    </script>
 
+    <script src="translation/translatemain.js"></script>
 </body>
 
 

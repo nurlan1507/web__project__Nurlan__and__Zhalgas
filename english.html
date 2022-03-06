@@ -122,7 +122,7 @@
                 <div class="button_  first__button bg-transparent">
                     <a class="btn__back arrow arrow_1"></a>
                 </div>
-                <a class="btn__foodname" id="foodname" style="width:250px"></a>
+                <a class="btn__foodname" id="foodname" style="width:280px"></a>
                 <div class="button_ second__button bg-transparent">
                     <a class="btn__ arrow arrow_2"></a>
                 </div>
@@ -268,9 +268,14 @@
             &#169 2022 SE - 2102 &#160&#160&#160&#160&#160 Legacy Policy
         </div>
     </div>
-    <script src="raiting2.js"></script>
+    <script src="ratings/raiting2.js"></script>
     <audio id="audio" src="https://www.myinstants.com/instant/ara-ara/?utm_source=copy&utm_medium=share"></audio>
     <script>
+        const select = document.querySelector('select');
+        document.getElementById('foodname').innerHTML = 'Завтрак'
+        if (select.value == "en") {
+            document.getElementById('foodname').innerHTML = 'Breakfast'
+        }
         const triggers = document.querySelectorAll('.country')
         triggers.forEach(item => item.addEventListener('click', function() {
             new Audio('images/engineer_no01.mp3').play();
@@ -300,6 +305,7 @@
         const slider = document.querySelector('.slider')
         const slider_line = document.querySelector('.slider__line')
         const arr_photo = document.querySelectorAll('.slider .slider__line img')
+
         let counter = 0;
         let width;
         document.getElementById('foodname').innerHTML = 'breakfast'
@@ -354,15 +360,29 @@
             let name = document.createElement('a')
             let namecounter = 0;
             name.style.color = "white"
-            if (counter == 0) {
-                name = "breakfast"
-                food.replaceChildren(name)
-            } else if (counter == 1) {
-                name = "Shepsherd pie"
-                food.replaceChildren(name)
-            } else if (counter == 2) {
-                name = "Fish and Chips"
-                food.replaceChildren(name)
+            if (select.value == 'en') {
+                if (counter == 0) {
+                    name = "breakfast"
+                    food.replaceChildren(name)
+                } else if (counter == 1) {
+                    name = "Shepsherd pie"
+                    food.replaceChildren(name)
+                } else if (counter == 2) {
+                    name = "Fish and Chips"
+                    food.replaceChildren(name)
+                }
+            }
+            if (select.value == 'ru') {
+                if (counter == 0) {
+                    name = "Завтрак"
+                    food.replaceChildren(name)
+                } else if (counter == 1) {
+                    name = "Английский пирог"
+                    food.replaceChildren(name)
+                } else if (counter == 2) {
+                    name = "Рыба с картошкой"
+                    food.replaceChildren(name)
+                }
             }
         }
         let timer = setInterval(move, 5000)
@@ -462,7 +482,7 @@
                 "en": "Seacrh",
             }
         }
-        const select = document.querySelector('select');
+
         const allLang = ['en', 'ru'];
 
 
