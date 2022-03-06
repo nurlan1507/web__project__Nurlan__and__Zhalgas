@@ -21,7 +21,7 @@ const slider_line = document.querySelector('.slider__line')
 const arr_photo = document.querySelectorAll('.slider .slider__line img')
 let counter = 0;
 let width;
-document.getElementById('foodname').innerHTML = 'Borch'
+document.getElementById('foodname').innerHTML = 'breakfast'
 
 function init() {
     console.log('reseize')
@@ -74,13 +74,13 @@ function ChangeName() {
     let namecounter = 0;
     name.style.color = "white"
     if (counter == 0) {
-        name = "Borch"
+        name = "breakfast"
         food.replaceChildren(name)
     } else if (counter == 1) {
-        name = "Bliny"
+        name = "Shepsherd pie"
         food.replaceChildren(name)
     } else if (counter == 2) {
-        name = "Pelmeni"
+        name = "Fish and Chips"
         food.replaceChildren(name)
     }
 }

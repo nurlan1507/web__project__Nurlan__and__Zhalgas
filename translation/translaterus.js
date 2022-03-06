@@ -42,19 +42,19 @@ const langArr = {
     },
     "creators": {
         "ru": 'Создатели',
-        "en": "creators",
+        "en": "Creators",
     },
     "bcontact": {
-        "ru": 'Связь с нами',
-        "en": "contact us",
+        "ru": 'Связаться с нами',
+        "en": "Contact us",
     },
     "bjoin": {
         "ru": 'Присоединиться',
-        "en": 'join'
+        "en": 'Join us'
     },
     "search": {
-        'ru': 'поиск',
-        "en": "seacrh",
+        'ru': 'Поиск',
+        "en": "Seacrh",
     }
 }
 const select = document.querySelector('select');

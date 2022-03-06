@@ -7,7 +7,26 @@ const langArr = {
         'ru': "Страны",
         'en': "Сountries"
     },
-
+    "createAccount": {
+        'ru': 'Ещё нет аккаунта?',
+        'en': "Don't have an account yet?",
+    },
+    "signinpop": {
+        'ru': 'Войти',
+        'en': 'Sign in',
+    },
+    "signuppop": {
+        'ru': 'Зарегестрирваться',
+        'en': 'Register',
+    },
+    "btnsigninpop": {
+        'ru': 'Войти',
+        'en': 'Sign in',
+    },
+    "bntsignuppop": {
+        'ru': 'Зарегестрирваться',
+        'en': 'Register',
+    },
     "contacts": {
         "ru": "Контакты",
         "en": "Сontacts",
@@ -21,12 +40,12 @@ const langArr = {
         "en": "Сreators",
     },
     "bcontact": {
-        "ru": 'Связь с нами',
+        "ru": 'Связаться с нами',
         "en": "Сontact us",
     },
     "bjoin": {
         "ru": 'Присоединиться',
-        "en": 'join'
+        "en": 'Join us'
     },
     "search": {
         'ru': 'Поиск',
@@ -61,7 +80,7 @@ const langArr = {
         'en': 'Choose country',
     },
     'aboutus': {
-        'ru': "о нас",
+        'ru': "О нас",
         'en': "About us",
     },
     "aboutusadd": {
