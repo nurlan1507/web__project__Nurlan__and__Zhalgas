@@ -7,10 +7,10 @@
     width: 100%;
 }
 
-.sign_up div:not(:last-child) {
+.sign_up div {
     background-color: white;
     width: 40%;
-    height: 400px;
+    height: 500px;
     border-radius: 40px;
     color: green;
     display: flex;
@@ -28,7 +28,7 @@
 }
 
 .sign_up div button {
-    margin-top: 10%;
+    margin-top: 2%;
 }
 
 .sign_up .bg-danger {

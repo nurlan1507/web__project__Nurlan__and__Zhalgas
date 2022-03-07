@@ -49,59 +49,89 @@ signConfirmUpBtn.onclick = function() {
             correctEmail = false;
         }
     }
-    /*let counterunique = 0;
+    let counterunique = 0;
     let counternum = 0;
-    let counterLet = 0;*/
+    let counterLet = 0;
     let signuppass = signUpPass.value;
     let signuprepeatpass = signUpRepeatPass.value;
 
-    if (signuprepeatpass === signuppass) {
-        correctPass = true;
-    } else { correctPass = false; }
+    if (signuppass.length >= 8) {
+        if (signuprepeatpass === signuppass) {
+            correctPass = true;
+        } else { correctPass = false; }
 
 
-    if (correctPass == true && correctEmail == true && username.value.length < 15) {
-        let user = {
-            name: username.value,
-            email: signupEmail.value,
-            password: signUpPass.value,
+
+
+
+
+
+        if (correctPass == true && correctEmail == true && username.value.length < 15) {
+            let user = {
+                name: username.value,
+                email: signupEmail.value,
+                password: signUpPass.value,
+            }
+            localStorage.setItem("" + email, JSON.stringify(user));
+            greet.value = 'Hello and welcome, ' + user.name;
+            localStorage.setItem('activeuser', greet.value);
+            privetstviye.replaceChildren(localStorage.getItem('activeuser'));
+            indexofusers++;
+            signUp.classList.remove('active');
+            username.value = '';
+            signUpPass.value = '';
+            signupEmail.value = '';
+            signUpRepeatPass.value = '';
+        } else {
+            if (correctPass == false) {
+                username.value = '';
+                signUpPass.value = '';
+                signupEmail.value = '';
+                signUpRepeatPass.value = '';
+                if (counternum <= 0 && counterLet <= 0) {
+                    if (select.value == 'en') {
+                        error = 'password should contain at least 8 elements';
+                    } else {
+                        error = 'Пароль должен состоять из 8 элементов';
+                    }
+                    errorplace.replaceChildren(error)
+                } else {
+                    if (select.value == 'en') {
+                        error = 'password should contain at least 8 elements';
+                    } else {
+                        error = 'Пароль должен состоять из 8 элементов';
+                    }
+                    errorplace.replaceChildren(error)
+                }
+            } else if (!(signuprepeatpass === signuppass)) {
+                username.value = '';
+                signUpPass.value = '';
+                signupEmail.value = '';
+                signUpRepeatPass.value = '';
+                if (select.value == 'en') {
+                    error = 'passwords should be the same ';
+                } else {
+                    error = 'Пароли должны быть одинаковыми';
+                }
+                errorplace.replaceChildren(error)
+            } else if (correctEmail == false) {
+                username.value = '';
+                signUpPass.value = '';
+                signupEmail.value = '';
+                signUpRepeatPass.value = '';
+                error = 'not valid email';
+                errorplace.replaceChildren(error)
+            }
         }
-        localStorage.setItem("" + email, JSON.stringify(user));
-        greet.value = 'Hello and welcome, ' + user.name;
-        localStorage.setItem('activeuser', greet.value);
-        privetstviye.replaceChildren(localStorage.getItem('activeuser'));
-        indexofusers++;
-        signUp.classList.remove('active');
-        username.value = '';
-        signUpPass.value = '';
-        signupEmail.value = '';
-        signUpRepeatPass.value = '';
     } else {
-        if (correctPass == false) {
-            username.value = '';
-            signUpPass.value = '';
-            signupEmail.value = '';
-            signUpRepeatPass.value = '';
-            error = 'please use special symbols in order to protect your account';
-            errorplace.replaceChildren(error)
-        } else if (!(signuprepeatpass === signuppass)) {
-            username.value = '';
-            signUpPass.value = '';
-            signupEmail.value = '';
-            signUpRepeatPass.value = '';
-            error = 'passwords should be the same';
-            errorplace.replaceChildren(error)
-        } else if (correctEmail == false) {
-            username.value = '';
-            signUpPass.value = '';
-            signupEmail.value = '';
-            signUpRepeatPass.value = '';
-            error = 'not valid email';
-            errorplace.replaceChildren(error)
+        if (select.value == 'en') {
+            error = 'password is short';
+        } else {
+            error = 'Пароль должен состоять из 8 элементов';
         }
+        errorplace.replaceChildren(error)
     }
 }
-
 
 
 
